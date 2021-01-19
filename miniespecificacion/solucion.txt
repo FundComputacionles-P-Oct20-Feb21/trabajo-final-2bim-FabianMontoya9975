@@ -99,7 +99,7 @@
 .                 crearInstagram()
 .             Fin
 .             Opcion 6
-.                 crearFlickr
+.                 crearFlickr()
 .             Fin
 .             Default
 .                 Escribir "Opción incorrecta."
@@ -239,6 +239,7 @@
 .     Leer correoUsuario
 .     Escribir "Resumen de cuenta creada en Instagram"
 .     Escribir "Nombre del usuario: " + nombreUsuario
+.     Escribir "Ciudad del usuario: " + ciudadUsuario
 .     Escribir "Edad del usuario: " + edadUsuario
 .     Escribir "Correo del usuario: " + correoUsuario
 . fin funcion crearInstagram
