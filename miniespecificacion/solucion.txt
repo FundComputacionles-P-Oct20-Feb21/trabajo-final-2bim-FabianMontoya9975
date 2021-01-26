@@ -73,15 +73,16 @@
 .     opcion1, i[0-n]
 .     opcion2, x(10)[{a-z}, {A-Z}]
 .     contadorCuentas, i[0-n] <-- 1
-.     bandera <-- false
+.     bandera <-- true
+.     bandera2 <-- true
 .     Haga_Hasta
-.     Escribir "Igresar 1 para crear una cuenta en Facebook"
-.     Escribir "Igresar 2 para crear una cuenta en Whatsapp"
-.     Escribir "Igresar 3 para crear una cuenta en Telegram"
-.     Escribir "Igresar 4 para crear una cuenta en Signal"
-.     Escribir "Igresar 5 para crear una cuenta en Instagram"
-.     Escribir "Igresar 6 para crear una cuenta en Flickr: "
-.     Leer opcion1
+.         Escribir "Ingresar 1 para crear una cuenta en Facebook"
+.         Escribir "Ingresar 2 para crear una cuenta en Whatsapp"
+.         Escribir "Ingresar 3 para crear una cuenta en Telegram"
+.         Escribir "Ingresar 4 para crear una cuenta en Signal"
+.         Escribir "Ingresar 5 para crear una cuenta en Instagram"
+.         Escribir "Ingresar 6 para crear una cuenta en Flickr: "
+.         Leer opcion1
 .         Dependiendo_De (opción) haga
 .             Opcion 1
 .                 crearFacebook()
@@ -106,20 +107,22 @@
 .             Fin
 .         Fin_Dependiendo_De
 .         Haga_Hasta
-.             Escribir "Escriba SI para crear mas cuentas"
-.             Escribir "Escriba NO para ya no crear mas cuentas: "
+.             Escribir "Escriba si para crear mas cuentas"
+.             Escribir "Escriba no para ya no crear mas cuentas: "
 .             Leer opcion2
-.             Si (opcion2 == "NO") Entonces
-.                 bandera <-- true
+.             Si (opcion2 == "no") Entonces
+.                 bandera <-- false
+.                 bandera2 <-- false
 .                 Escribir obtenerMensaje(contadorCuentas)
 .             De lo contrario
-.                 Si (opcion2 == "SI") Entonces
+.                 Si (opcion2 == "si") Entonces
+.                     bandera2 <-- false
 .                     contadorCuentas <-- contadorCuentas + 1
 .                 De lo contrario
 .                     Escribir "Opción incorrecta."
 .                 Fin Si
 .             Fin Si
-.         Fin Haga_Hasta ((opcion2 == "NO") or (opcion2 == "SI"))
+.         Fin Haga_Hasta (bandera2)
 .     Fin Haga_Hasta(bandera)
 . fin funcion principal
 
@@ -258,18 +261,19 @@
 . fin funcion crearFlickr
 
 . funcion obtenerMensaje(cont, i) : x
-.     (mensajeFinal(3), x(300)[{a-z}, {A-Z}, {BS}])
 .     cadenaFinal, x(300)[{a-z}, {A-Z}, {0-9}, {BS}]) <-- ""
-.     mensajeFinal <-- {"Campaña con poca afluencia", "Campaña moderada
-                       siga adelante", "Excelente campaña"}
+.     (mensajeFinal(3), x(300)[{a-z}, {A-Z}, {BS}])
+.     mensajeFinal <-- {"Campaña con poca afluencia",
+                       "Campaña moderada siga adelante",
+                       "Excelente campaña"}
 .     Si ((cont >= 1) and (cont <= 5)) Entonces
-.         cadenaFinal <-- "Campaña con poca afluencia"
+.         cadenaFinal <-- mensajeFinal[0]
 .     De lo contrario
 .         Si ((cont >= 6) and (cont <= 15)) Entonces
-.             cadenaFinal <-- "Campaña moderada siga adelante"
+.             cadenaFinal <-- mensajeFinal[1]
 .         De lo contrario
 .             Si (cont >= 16) Entonces
-.                 cadenaFinal <-- "Excelente campaña"
+.                 cadenaFinal <-- mensajeFinal[2]
 .             Fin Si
 .         Fin Si
 .     Fin Si
