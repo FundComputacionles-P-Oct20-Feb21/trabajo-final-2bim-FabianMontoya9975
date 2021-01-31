@@ -67,217 +67,217 @@
 // c. Si el número de cuentas creadas está en el rango de 16 en adelante,
 // el mensaje será: Excelente campaña
 
-. Inicio
+1. Inicio
 
-. funcion principal()
-.     opcion1, i[0-n]
-.     opcion2, x(10)[{a-z}, {A-Z}]
-.     contadorCuentas, i[0-n] <-- 1
-.     bandera <-- true
-.     bandera2 <-- true
-.     Haga_Hasta
-.         Escribir "Ingresar 1 para crear una cuenta en Facebook"
-.         Escribir "Ingresar 2 para crear una cuenta en Whatsapp"
-.         Escribir "Ingresar 3 para crear una cuenta en Telegram"
-.         Escribir "Ingresar 4 para crear una cuenta en Signal"
-.         Escribir "Ingresar 5 para crear una cuenta en Instagram"
-.         Escribir "Ingresar 6 para crear una cuenta en Flickr: "
-.         Leer opcion1
-.         Dependiendo_De (opción) haga
-.             Opcion 1
-.                 crearFacebook()
-.             Fin
-.             Opcion 2
-.                 crearWhatsapp()
-.             Fin
-.             Opcion 3
-.                 crearTelegram()
-.             Fin
-.             Opcion 4
-.                 crearSignal()
-.             Fin
-.             Opcion 5
-.                 crearInstagram()
-.             Fin
-.             Opcion 6
-.                 crearFlickr()
-.             Fin
-.             Default
-.                 Escribir "Opción incorrecta."
-.             Fin
-.         Fin_Dependiendo_De
-.         Haga_Hasta
-.             Escribir "Escriba si para crear mas cuentas"
-.             Escribir "Escriba no para ya no crear mas cuentas: "
-.             Leer opcion2
-.             Si (opcion2 == "no") Entonces
-.                 bandera <-- false
-.                 bandera2 <-- false
-.                 Escribir obtenerMensaje(contadorCuentas)
-.             De lo contrario
-.                 Si (opcion2 == "si") Entonces
-.                     bandera2 <-- false
-.                     contadorCuentas <-- contadorCuentas + 1
-.                 De lo contrario
-.                     Escribir "Opción incorrecta."
-.                 Fin Si
-.             Fin Si
-.         Fin Haga_Hasta (bandera2)
-.     Fin Haga_Hasta(bandera)
-. fin funcion principal
+2. funcion principal()
+3.     opcion1, i[0-n]
+4.     opcion2, x(10)[{a-z}, {A-Z}]
+5.     contadorCuentas, i[0-n] <-- 1
+6.     bandera <-- true
+7.     bandera2 <-- true
+8.     Haga_Hasta
+9.         Escribir "Ingresar 1 para crear una cuenta en Facebook"
+10.         Escribir "Ingresar 2 para crear una cuenta en Whatsapp"
+11.         Escribir "Ingresar 3 para crear una cuenta en Telegram"
+12.         Escribir "Ingresar 4 para crear una cuenta en Signal"
+13.         Escribir "Ingresar 5 para crear una cuenta en Instagram"
+14.         Escribir "Ingresar 6 para crear una cuenta en Flickr: "
+15.         Leer opcion1
+16.         Dependiendo_De (opción) haga
+17.             Opcion 1
+18.                 crearFacebook()
+19.             Fin
+20.             Opcion 2
+21.                 crearWhatsapp()
+22.             Fin
+23.             Opcion 3
+24.                 crearTelegram()
+25.             Fin
+26.             Opcion 4
+27.                 crearSignal()
+28.             Fin
+29.             Opcion 5
+30.                 crearInstagram()
+31.             Fin
+32.             Opcion 6
+33.                 crearFlickr()
+34.             Fin
+35.             Default
+36.                 Escribir "Opción incorrecta."
+37.             Fin
+38.         Fin_Dependiendo_De
+39.         Haga_Hasta
+40.             Escribir "Escriba si para crear mas cuentas"
+41.             Escribir "Escriba no para ya no crear mas cuentas: "
+42.             Leer opcion2
+43.             Si (opcion2 == "no") Entonces
+44.                 bandera <-- false
+45.                 bandera2 <-- false
+46.                 Escribir obtenerMensaje(contadorCuentas)
+47.             De lo contrario
+48.                 Si (opcion2 == "si") Entonces
+49.                     bandera2 <-- false
+50.                     contadorCuentas <-- contadorCuentas + 1
+51.                 De lo contrario
+52.                     Escribir "Opción incorrecta."
+53.                 Fin Si
+54.             Fin Si
+55.         Fin Haga_Hasta (bandera2)
+56.     Fin Haga_Hasta(bandera)
+57. fin funcion principal
 
-. funcion crearFacebook()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     edadUsuario, i[0-n]
-.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
-.     Escribir "Usted escogió la opción crear cuenta en Facebook"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar la edad del Usuario: "
-.     Leer edadUsuario
-.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
-.     Leer ciudadUsuario
-.     Escribir "Ingresar el país donde se ubica el Usuario: "
-.     Leer paisUsuario
-.     Escribir "Ingresar correo del Usuario: "
-.     Leer correoUsuario
-.     Escribir "Resumen de cuenta creada en Facebook"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Edad del usuario: " + edadUsuario
-.     Escribir "Ciudad del usuario: " + ciudadUsuario
-.     Escribir "País del usuario: " + paisUsuario
-.     Escribir "Correo del usuario: " + correoUsuario
-. fin funcion crearFacebook
+58. funcion crearFacebook()
+59.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+60.     edadUsuario, i[0-n]
+61.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+62.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+63.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
+64.     Escribir "Usted escogió la opción crear cuenta en Facebook"
+65.     Escribir "Ingresar el nombre de Usuario: "
+66.     Leer nombreUsuario
+67.     Escribir "Ingresar la edad del Usuario: "
+68.     Leer edadUsuario
+69.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+70.     Leer ciudadUsuario
+71.     Escribir "Ingresar el país donde se ubica el Usuario: "
+72.     Leer paisUsuario
+73.     Escribir "Ingresar correo del Usuario: "
+74.     Leer correoUsuario
+75.     Escribir "Resumen de cuenta creada en Facebook"
+76.     Escribir "Nombre del usuario: " + nombreUsuario
+77.     Escribir "Edad del usuario: " + edadUsuario
+78.     Escribir "Ciudad del usuario: " + ciudadUsuario
+79.     Escribir "País del usuario: " + paisUsuario
+80.     Escribir "Correo del usuario: " + correoUsuario
+81. fin funcion crearFacebook
 
-. funcion crearWhatsapp()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     numeroTelefono, x(20)[{0-9}]
-.     edadUsuario, i[0-n]
-.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     Escribir "Usted escogió la opción crear cuenta en Whatsapp"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar el número de teléfono del Usuario: "
-.     Leer numeroTelefono
-.     Escribir "Ingresar la edad del Usuario: "
-.     Leer edadUsuario
-.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
-.     Leer ciudadUsuario
-.     Escribir "Ingresar el país donde se ubica el Usuario: "
-.     Leer paisUsuario
-.     Escribir "Resumen de cuenta creada en Whatsapp"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Número del teléfono del usuario: " + numeroTelefono
-.     Escribir "Edad del usuario: " + edadUsuario
-.     Escribir "Ciudad del usuario: " + ciudadUsuario
-.     Escribir "País del usuario: " + paisUsuario
-. fin funcion crearWhatsapp
+82. funcion crearWhatsapp()
+83.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+84.     numeroTelefono, x(20)[{0-9}]
+85.     edadUsuario, i[0-n]
+86.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+87.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+88.     Escribir "Usted escogió la opción crear cuenta en Whatsapp"
+89.     Escribir "Ingresar el nombre de Usuario: "
+90.     Leer nombreUsuario
+91.     Escribir "Ingresar el número de teléfono del Usuario: "
+92.     Leer numeroTelefono
+93.     Escribir "Ingresar la edad del Usuario: "
+94.     Leer edadUsuario
+95.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+96.     Leer ciudadUsuario
+97.     Escribir "Ingresar el país donde se ubica el Usuario: "
+98.     Leer paisUsuario
+99.     Escribir "Resumen de cuenta creada en Whatsapp"
+100.     Escribir "Nombre del usuario: " + nombreUsuario
+101.     Escribir "Número del teléfono del usuario: " + numeroTelefono
+102.     Escribir "Edad del usuario: " + edadUsuario
+103.     Escribir "Ciudad del usuario: " + ciudadUsuario
+104.     Escribir "País del usuario: " + paisUsuario
+105. fin funcion crearWhatsapp
 
-. funcion crearTelegram()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     numeroTelefono, x(20)[{0-9}]
-.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     areaInteres, x(600)[{a-z}, {A-Z}, {0-9}, {BS}]
-.     Escribir "Usted escogió la opción crear cuenta en Telegram"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar el número de teléfono del Usuario: "
-.     Leer numeroTelefono
-.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
-.     Leer ciudadUsuario
-.     Escribir "Ingresar el país donde se ubica el Usuario: "
-.     Leer paisUsuario
-.     Escribir "Ingresar el área de interés del Usuario: "
-.     Leer areaInteres
-.     Escribir "Resumen de cuenta creada en Telegram"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Número del teléfono del usuario: " + numeroTelefono
-.     Escribir "Ciudad del usuario: " + ciudadUsuario
-.     Escribir "País del usuario: " + paisUsuario
-.     Escribir "Área de interés del usuario: " + areaInteres
-. fin funcion crearTelegram
+106. funcion crearTelegram()
+107.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+108.     numeroTelefono, x(20)[{0-9}]
+109.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+110.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+111.     areaInteres, x(600)[{a-z}, {A-Z}, {0-9}, {BS}]
+112.     Escribir "Usted escogió la opción crear cuenta en Telegram"
+113.     Escribir "Ingresar el nombre de Usuario: "
+114.     Leer nombreUsuario
+115.     Escribir "Ingresar el número de teléfono del Usuario: "
+116.     Leer numeroTelefono
+117.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+118.     Leer ciudadUsuario
+119.     Escribir "Ingresar el país donde se ubica el Usuario: "
+120.     Leer paisUsuario
+121.     Escribir "Ingresar el área de interés del Usuario: "
+122.     Leer areaInteres
+123.     Escribir "Resumen de cuenta creada en Telegram"
+124.     Escribir "Nombre del usuario: " + nombreUsuario
+125.     Escribir "Número del teléfono del usuario: " + numeroTelefono
+126.     Escribir "Ciudad del usuario: " + ciudadUsuario
+127.     Escribir "País del usuario: " + paisUsuario
+128.     Escribir "Área de interés del usuario: " + areaInteres
+129. fin funcion crearTelegram
 
-. funcion crearSignal()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     numeroTelefono, x(20)[{0-9}]
-.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     hobbyPri, x(600)[{a-z}, {A-Z}, {0-9}, {BS}]
-.     Escribir "Usted escogió la opción crear cuenta en Signal"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar el número de teléfono del Usuario: "
-.     Leer numeroTelefono
-.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
-.     Leer ciudadUsuario
-.     Escribir "Ingresar el país donde se ubica el Usuario: "
-.     Leer paisUsuario
-.     Escribir "Ingresar el hobby principal: "
-.     Leer hobbyPri
-.     Escribir "Resumen de cuenta creada en Signal"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Número del teléfono del usuario: " + numeroTelefono
-.     Escribir "Ciudad del usuario: " + ciudadUsuario
-.     Escribir "País del usuario: " + paisUsuario
-.     Escribir "Hobby principal del usuario: " + hobbyPri
-. fin funcion crearSignal
+130. funcion crearSignal()
+131.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+132.     numeroTelefono, x(20)[{0-9}]
+133.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+134.     paisUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+135.     hobbyPri, x(600)[{a-z}, {A-Z}, {0-9}, {BS}]
+136.     Escribir "Usted escogió la opción crear cuenta en Signal"
+137.     Escribir "Ingresar el nombre de Usuario: "
+138.     Leer nombreUsuario
+139.     Escribir "Ingresar el número de teléfono del Usuario: "
+140.     Leer numeroTelefono
+141.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+142.     Leer ciudadUsuario
+143.     Escribir "Ingresar el país donde se ubica el Usuario: "
+144.     Leer paisUsuario
+145.     Escribir "Ingresar el hobby principal: "
+146.     Leer hobbyPri
+147.     Escribir "Resumen de cuenta creada en Signal"
+148.     Escribir "Nombre del usuario: " + nombreUsuario
+149.     Escribir "Número del teléfono del usuario: " + numeroTelefono
+150.     Escribir "Ciudad del usuario: " + ciudadUsuario
+151.     Escribir "País del usuario: " + paisUsuario
+152.     Escribir "Hobby principal del usuario: " + hobbyPri
+153. fin funcion crearSignal
 
-. funcion crearInstagram()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
-.     edadUsuario, i[0-n]
-.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
-.     Escribir "Usted escogió la opción crear cuenta en Instagram"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
-.     Leer ciudadUsuario
-.     Escribir "Ingresar la edad del Usuario: "
-.     Leer edadUsuario
-.     Escribir "Ingresar correo del Usuario: "
-.     Leer correoUsuario
-.     Escribir "Resumen de cuenta creada en Instagram"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Ciudad del usuario: " + ciudadUsuario
-.     Escribir "Edad del usuario: " + edadUsuario
-.     Escribir "Correo del usuario: " + correoUsuario
-. fin funcion crearInstagram
+154. funcion crearInstagram()
+155.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+156.     ciudadUsuario, x(90)[{a-z}, {A-Z}, {BS}]
+157.     edadUsuario, i[0-n]
+158.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
+159.     Escribir "Usted escogió la opción crear cuenta en Instagram"
+160.     Escribir "Ingresar el nombre de Usuario: "
+161.     Leer nombreUsuario
+162.     Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+163.     Leer ciudadUsuario
+164.     Escribir "Ingresar la edad del Usuario: "
+165.     Leer edadUsuario
+166.     Escribir "Ingresar correo del Usuario: "
+167.     Leer correoUsuario
+168.     Escribir "Resumen de cuenta creada en Instagram"
+169.     Escribir "Nombre del usuario: " + nombreUsuario
+170.     Escribir "Ciudad del usuario: " + ciudadUsuario
+171.     Escribir "Edad del usuario: " + edadUsuario
+172.     Escribir "Correo del usuario: " + correoUsuario
+173. fin funcion crearInstagram
 
-. funcion crearFlickr()
-.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
-.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
-.     Escribir "Usted escogió la opción crear cuenta en Flickr"
-.     Escribir "Ingresar el nombre de Usuario: "
-.     Leer nombreUsuario
-.     Escribir "Ingresar correo del Usuario: "
-.     Leer correoUsuario
-.     Escribir "Resumen de cuenta creada en Flickr"
-.     Escribir "Nombre del usuario: " + nombreUsuario
-.     Escribir "Correo del usuario: " + correoUsuario
-. fin funcion crearFlickr
+174. funcion crearFlickr()
+175.     nombreUsuario, x(100)[{a-z}, {A-Z}, {BS}]
+176.     correoUsuario, x(50)[{a-z}, {A-Z}, {0-9}, {@ _ .}]
+177.     Escribir "Usted escogió la opción crear cuenta en Flickr"
+178.     Escribir "Ingresar el nombre de Usuario: "
+179.     Leer nombreUsuario
+180.     Escribir "Ingresar correo del Usuario: "
+181.     Leer correoUsuario
+182.     Escribir "Resumen de cuenta creada en Flickr"
+183.     Escribir "Nombre del usuario: " + nombreUsuario
+184.     Escribir "Correo del usuario: " + correoUsuario
+185. fin funcion crearFlickr
 
-. funcion obtenerMensaje(cont, i) : x
-.     cadenaFinal, x(300)[{a-z}, {A-Z}, {0-9}, {BS}]) <-- ""
-.     (mensajeFinal(3), x(300)[{a-z}, {A-Z}, {BS}])
-.     mensajeFinal <-- {"Campaña con poca afluencia",
+186. funcion obtenerMensaje(cont, i) : x
+187.     cadenaFinal, x(300)[{a-z}, {A-Z}, {0-9}, {BS}]) <-- ""
+188.     (mensajeFinal(3), x(300)[{a-z}, {A-Z}, {BS}])
+189.     mensajeFinal <-- {"Campaña con poca afluencia",
                        "Campaña moderada siga adelante",
                        "Excelente campaña"}
-.     Si ((cont >= 1) and (cont <= 5)) Entonces
-.         cadenaFinal <-- mensajeFinal[0]
-.     De lo contrario
-.         Si ((cont >= 6) and (cont <= 15)) Entonces
-.             cadenaFinal <-- mensajeFinal[1]
-.         De lo contrario
-.             Si (cont >= 16) Entonces
-.                 cadenaFinal <-- mensajeFinal[2]
-.             Fin Si
-.         Fin Si
-.     Fin Si
-.     return cadenaFinal
-. fin funcion obtenerMensaje
+190.     Si ((cont >= 1) and (cont <= 5)) Entonces
+191.         cadenaFinal <-- mensajeFinal[0]
+192.     De lo contrario
+193.         Si ((cont >= 6) and (cont <= 15)) Entonces
+194.             cadenaFinal <-- mensajeFinal[1]
+195.         De lo contrario
+196.             Si (cont >= 16) Entonces
+197.                 cadenaFinal <-- mensajeFinal[2]
+198.             Fin Si
+199.         Fin Si
+200.     Fin Si
+201.     return cadenaFinal
+202. fin funcion obtenerMensaje
 
-. Fin
+203. Fin
